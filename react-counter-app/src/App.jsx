@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import Home from "./components/Home"
 import Counter from "./components/Counter"
+import Stopwatch from "./components/Stopwatch"
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/counter" element={<Counter/>}></Route>
-        <Route path="/stopwatch" element={<h1>Stopwatch app</h1>}></Route>
+        <Route path="/stopwatch" element={<Stopwatch/>}></Route>
         <Route path="*" element={<h1>no page available</h1>}></Route>
       </Routes>
     </div>
