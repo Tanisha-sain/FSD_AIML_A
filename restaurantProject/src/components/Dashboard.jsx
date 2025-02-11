@@ -5,7 +5,7 @@ function Dashboard() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     useEffect(() => {
-        const url = `https://dummyjson.com/recips`;
+        const url = `https://dummyjson.com/recipes`;
         const res = fetch(url);
         res.then((res) => res.json())
         .then((data) =>{
